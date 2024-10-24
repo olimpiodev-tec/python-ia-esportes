@@ -1,0 +1,94 @@
+/* Estilo geral */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container principal do chat */
+.chat-container {
+    width: 80%;
+    /* max-width: 400px; */
+    height: 500px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/* Cabeçalho do chat */
+.chat-header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 1.5rem;
+}
+
+/* Área de mensagens */
+.chat-messages {
+    flex: 1;
+    padding: 15px;
+    overflow-y: auto;
+    background-color: #eaeaea;
+}
+
+/* Estilo das mensagens */
+.message {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    max-width: 80%;
+    word-wrap: break-word;
+}
+
+.user {
+    background-color: #4CAF50;
+    color: white;
+    align-self: flex-end;
+}
+
+.bot {
+    background-color: #ddd;
+    align-self: flex-start;
+}
+
+/* Campo de entrada e botão */
+.chat-input {
+    display: flex;
+    border-top: 1px solid #ccc;
+}
+
+.chat-input input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+}
+
+.chat-input button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.chat-input button:hover {
+    background-color: #45a049;
+}
+
+.message.bot span {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow: break-word;
+}
